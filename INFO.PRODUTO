@@ -86,7 +86,11 @@ referrerpolicy="no-referrer"
       </div>
     </header>
 
+    <span class="text-sm text-gray-500 mt-3 mt-10 px-18 text-xl  ">Home / Produtos / Tenis / Nike / Tenis Nike Revolution 6 Nature Masculino</span>
+
   <div class="container mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-2 gap-10">
+
+  
     <!-- Galeria -->
     <div>
       <div class="flex items-center justify-center rounded-lg  transition-all ">
@@ -146,23 +150,23 @@ referrerpolicy="no-referrer"
         <div class="flex gap-2">
           <label>
             <input type="radio" name="tamanho" class="peer hidden" />
-            <div class="border px-4 py-1 rounded peer-checked:bg-pink-600 peer-checked:text-white hover:bg-gray-100 cursor-pointer transition">39</div>
+            <div class="border px-4 py-3 rounded peer-checked:bg-pink-600 peer-checked:text-white hover:bg-gray-100 cursor-pointer transition">39</div>
           </label>
           <label>
             <input type="radio" name="tamanho" class="peer hidden" />
-            <div class="border px-4 py-1 rounded peer-checked:bg-pink-600 peer-checked:text-white hover:bg-gray-100 cursor-pointer transition">40</div>
+            <div class="border px-4 py-3 rounded peer-checked:bg-pink-600 peer-checked:text-white hover:bg-gray-100 cursor-pointer transition">40</div>
           </label>
           <label>
             <input type="radio" name="tamanho" class="peer hidden" />
-            <div class="border px-4 py-1 rounded peer-checked:bg-pink-600 peer-checked:text-white hover:bg-gray-100 cursor-pointer transition">41</div>
+            <div class="border px-4 py-3 rounded peer-checked:bg-pink-600 peer-checked:text-white hover:bg-gray-100 cursor-pointer transition">41</div>
           </label>
           <label>
             <input type="radio" name="tamanho" class="peer hidden" />
-            <div class="border px-4 py-1 rounded peer-checked:bg-pink-600 peer-checked:text-white hover:bg-gray-100 cursor-pointer transition">42</div>
+            <div class="border px-4 py-3 rounded peer-checked:bg-pink-600 peer-checked:text-white hover:bg-gray-100 cursor-pointer transition">42</div>
           </label>
           <label>
             <input type="radio" name="tamanho" class="peer hidden" />
-            <div class="border px-4 py-1 rounded peer-checked:bg-pink-600 peer-checked:text-white hover:bg-gray-100 cursor-pointer transition">43</div>
+            <div class="border px-4 py-3 rounded peer-checked:bg-pink-600 peer-checked:text-white hover:bg-gray-100 cursor-pointer transition">43</div>
           </label>
         </div>
       </div>
@@ -191,7 +195,7 @@ referrerpolicy="no-referrer"
       </div>
 
       <!-- Botão Comprar -->
-      <button class="mt-6 bg-yellow-400 text-white font-semibold px-20 py-3 rounded hover:bg-yellow-500 active:scale-95 transition ">
+      <button class="mt-6 bg-yellow-400 text-white font-semibold px-20 py-3 rounded hover:bg-yellow-500 active:scale-95 transition flex ju ">
         COMPRAR
       </button>
     </div>
@@ -216,26 +220,59 @@ referrerpolicy="no-referrer"
       </div>   
       </div>
 
-      <div class="border rounded-lg p-3 hover:shadow-lg transition cursor-pointer bg-white">
+      <div class=" rounded-lg p-3 hover:shadow-lg transition cursor-pointer bg-white">
+        <div class="">
+          <img class="border-black rounded-lg bg-white w-full shadow-md hover:shadow-md" src="assets/tenisazul2.png" alt="teniscoluna1">
+        </div>
+      <div>
+        <h4 class="mt-2 text-sm text-gray-500">Tênis</h4>
+        <p class="font-medium">K-Swiss V8 - Masculino</p>
+        <p class="text-sm"><span class="line-through text-gray-400">$200</span> <span class="text-black font-semibold">$100</span></p>
+      </div>   
+      </div>
+
+      <!-- <div class="border rounded-lg p-3 hover:shadow-lg transition cursor-pointer bg-white">
         <div class="w-full h-40 bg-pink-200 flex items-center justify-center rounded mt-2">Imagem</div>
         <h4 class="mt-2 text-sm text-gray-500">Tênis</h4>
         <p class="font-medium">K-Swiss V8 - Masculino</p>
         <p class="text-sm"><span class="line-through text-gray-400">$200</span> <span class="text-black font-semibold">$100</span></p>
+      </div> -->
+
+      <div class=" rounded-lg p-3 hover:shadow-lg transition cursor-pointer bg-white">
+        <div class="">
+          <img class="border-black rounded-lg bg-white w-full shadow-md hover:shadow-md" src="assets/tenisazul2.png" alt="teniscoluna1">
+        </div>
+      <div>
+        <h4 class="mt-2 text-sm text-gray-500">Tênis</h4>
+        <p class="font-medium">K-Swiss V8 - Masculino</p>
+        <p class="text-sm"><span class="line-through text-gray-400">$200</span> <span class="text-black font-semibold">$100</span></p>
+      </div>   
       </div>
 
-      <div class="border rounded-lg p-3 hover:shadow-lg transition cursor-pointer bg-white">
+      <!-- <div class="border rounded-lg p-3 hover:shadow-lg transition cursor-pointer bg-white">
         <div class="w-full h-40 bg-purple-200 flex items-center justify-center rounded mt-2">Imagem</div>
         <h4 class="mt-2 text-sm text-gray-500">Tênis</h4>
         <p class="font-medium">K-Swiss V8 - Masculino</p>
         <p class="text-sm"><span class="line-through text-gray-400">$200</span> <span class="text-black font-semibold">$100</span></p>
+      </div> -->
+
+      <div class=" rounded-lg p-3 hover:shadow-lg transition cursor-pointer bg-white">
+        <div class="">
+          <img class="border-black rounded-lg bg-white w-full shadow-md hover:shadow-md" src="assets/tenisazul2.png" alt="teniscoluna1">
+        </div>
+      <div>
+        <h4 class="mt-2 text-sm text-gray-500">Tênis</h4>
+        <p class="font-medium">K-Swiss V8 - Masculino</p>
+        <p class="text-sm"><span class="line-through text-gray-400">$200</span> <span class="text-black font-semibold">$100</span></p>
+      </div>   
       </div>
 
-      <div class="border rounded-lg p-3 hover:shadow-lg transition cursor-pointer bg-white">
+      <!-- <div class="border rounded-lg p-3 hover:shadow-lg transition cursor-pointer bg-white">
         <div class="w-full h-40 bg-yellow-200 flex items-center justify-center rounded mt-2">Imagem</div>
         <h4 class="mt-2 text-sm text-gray-500">Tênis</h4>
         <p class="font-medium">K-Swiss V8 - Masculino</p>
         <p class="text-sm"><span class="line-through text-gray-400">$200</span> <span class="text-black font-semibold">$100</span></p>
-      </div>
+      </div> -->
     </div>
   </section>
   <footer class="bg-[#1F1F1F] text-white flex justify-center py-12">
