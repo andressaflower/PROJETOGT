@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CompraRealizada</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+/>
+  
+</head>
+<body class="bg-white text-gray-800">
+<div class="min-h-screen bg-[#F5F6FA] py-10 px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+  <!-- Container principal -->
+  <div class="bg-white w-full max-w-3xl rounded-lg shadow-md p-6 sm:p-10">
+    <!-- Ícone e título -->
+    <div class="flex flex-col items-center">
+   <img src="https://media.giphy.com/media/1wX5TJZPqVw3HhyDYn/giphy.gif" alt="Popper" class="w-16 h-16 mb-2" />
+      <h1 class="text-xl font-semibold text-gray-900 text-center">Compra Realizada<br/>com sucesso!</h1>
+    </div>
+
+    <!-- Informações Pessoais -->
+    <div class="mt-8 text-sm text-gray-800">
+      <p class="font-semibold mb-2">Informações Pessoais</p>
+      <div class="border-t border-gray-300 pt-2">
+        <p><span class="font-medium">Nome:</span> Francisco Amado Pereira</p>
+        <p><span class="font-medium">CPF:</span> 123.456.789-10</p>
+        <p><span class="font-medium">Email:</span> francisco@gmail.com</p>
+        <p><span class="font-medium">Celular:</span> (84) 99955-5555</p>
+      </div>
+    </div>
+
+    <!-- Informações de Entrega -->
+    <div class="mt-6 text-sm text-gray-800">
+      <p class="font-semibold mb-2">Informações de Entrega</p>
+      <div class="border-t border-gray-300 pt-2">
+        <p><span class="font-medium">Endereço:</span> Rua João Pessoa, 333</p>
+        <p><span class="font-medium">Bairro:</span> Centro</p>
+        <p><span class="font-medium">Cidade:</span> Fortaleza, Ceará</p>
+        <p><span class="font-medium">CEP:</span> 4300-040</p>
+      </div>
+    </div>
+
+    <!-- Informações de Pagamento -->
+    <div class="mt-6 text-sm text-gray-800">
+      <p class="font-semibold mb-2">Informações de Pagamento</p>
+      <div class="border-t border-gray-300 pt-2">
+        <p><span class="font-medium">Titular do Cartão:</span> FRANCISCO A P</p>
+        <p><span class="font-medium">Final:</span> **** **** **** 2020</p>
+      </div>
+    </div>
+
+    <!-- Resumo da Compra -->
+    <div class="mt-6 text-sm text-gray-800">
+      <p class="font-semibold mb-2">Resumo da compra</p>
+      <div class="border-t border-gray-300 pt-4">
+        <div class="flex items-center gap-4">
+          <img src="assets/tenisvermelho.png" alt="Produto" class="w-14 h-14 object-cover rounded" />
+          <div>
+            <p class="font-medium">Tênis Nike Revolution 6 Next Nature Masculino</p>
+          </div>
+        </div>
+        <div class="border-t border-gray-300 mt-4 pt-4 bg-[#FFF9EE] px-4 py-3 rounded">
+          <div class="flex justify-between font-semibold text-gray-900">
+            <span>Total</span>
+            <span>R$ 219,00</span>
+          </div>
+          <p class="text-xs text-gray-500 mt-1">em até 12x de R$ 21,90 sem juros</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botões -->
+    <div class="mt-6 text-center text-sm text-gray-600">
+      <a href="#" class="underline">Imprimir Recibo</a>
+    </div>
+    <button class=" mt-4 w-full bg-[#F9A826] hover:bg-[#f89c17] text-white font-medium py-2 px-4 rounded transition duration-300 cursor-pointer">
+      Voltar para Home
+    </button>
+  </div>
+</div>
+
+</body>
+
+
+</html>
