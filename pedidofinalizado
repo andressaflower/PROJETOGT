@@ -22,13 +22,15 @@ referrerpolicy="no-referrer"
   
 </head>
 <body class="bg-white text-gray-800">
-<div class="min-h-screen bg-[#F5F6FA] py-10 px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+
+  <section>
+    <div class=" bg-black py-10 px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center">
   <!-- Container principal -->
   <div class="bg-white w-full max-w-3xl rounded-lg shadow-md p-6 sm:p-10">
     <!-- Ícone e título -->
     <div class="flex flex-col items-center">
-   <img src="https://media.giphy.com/media/1wX5TJZPqVw3HhyDYn/giphy.gif" alt="Popper" class="w-16 h-16 mb-2" />
-      <h1 class="text-xl font-semibold text-gray-900 text-center">Compra Realizada<br/>com sucesso!</h1>
+   <img src="assets/popper.gif" alt="Popper" class="w-16 h-16 mb-2" />
+      <h1 class="text-2xl font-bold text-gray-900 text-center">Compra Realizada<br/>com sucesso!</h1>
     </div>
 
     <!-- Informações Pessoais -->
@@ -84,15 +86,23 @@ referrerpolicy="no-referrer"
 
     <!-- Botões -->
     <div class="mt-6 text-center text-sm text-gray-600">
-      <a href="#" class="underline">Imprimir Recibo</a>
+      <a href="#" class="underline ">Imprimir Recibo</a>
     </div>
-    <button class=" mt-4 w-full bg-[#F9A826] hover:bg-[#f89c17] text-white font-medium py-2 px-4 rounded transition duration-300 cursor-pointer">
+  
+   
+  </div>
+  <div class="w-full flex flex-col items-center mt-3">
+    <button class=" px-18 py-3 md:px- bg-[#F9A826] hover:bg-[#f89c17] text-white rounded transition duration-300 cursor-pointer">
       Voltar para Home
     </button>
   </div>
+  
+
+
 </div>
 
-</body>
+  </section>
 
+</body>
 
 </html>
