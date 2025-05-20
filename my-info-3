@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CompraRealizada</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+/>
+  
+</head>
+<body class="bg-white text-gray-800">
+
+   <main class="bg-gray-100 min-h-screen flex items-center justify-center p-4 ">
+   <div class="flex flex-col lg:flex-row gap-10  ">
+    <section class=" bg-white rounded-lg shadow-md hidden lg:block w-full h-80 max-w-sm bg-white rounded-lg shadow-md p-6
+    ">
+    <label class="flex items-center border-b-2 border-gray-200 py-4 items-start">
+    <input type="radio" name="tamanho" class="peer hidden" />
+    <div class="text-lg font-semibold mb-4 cursor-pointer order-gray-300  peer-checked:text-pink-600 hover cursor-pointer transition">Meu Perfil</div>
+    </label>
+     <label class="flex items-center border-b-2 border-gray-200 py-4 items-start">
+    <input type="radio" name="tamanho" class="peer hidden" />
+    <div class="text-lg font-semibold mb-4 cursor-pointer order-gray-300  peer-checked:text-pink-600 hover cursor-pointer transition">Meus Pedidos</div>
+    </label>
+     <label class="flex items-center border-b-2 border-gray-200 py-4 items-start">
+    <input type="radio" name="tamanho" class="peer hidden" />
+    <div class="text-lg font-semibold mb-4 cursor-pointer order-gray-300  peer-checked:text-pink-600 hover cursor-pointer transition">Minhas Informacoes</div>
+    </label>
+     <label class="flex items-center border-b-2 border-gray-200 py-4 items-start">
+    <input type="radio" name="tamanho" class="peer hidden" />
+    <div class="text-lg font-semibold mb-4 cursor-pointer order-gray-300  peer-checked:text-pink-600 hover cursor-pointer transition">Metodos de Pagamento</div>
+    </label>
+    
+
+
+    </section>
+
+
+    
+      <div class="w-full sm:px-6  max-w-3xl bg-white rounded-lg shadow-md p-6">
+      <div class="flex w-full flex-row gap-90  border-b-2 border-gray-200 whitespace-nowrap">
+       <h2 class="text-lg font-semibold mb-4">Meus Pedidos</h2>
+        <h2 class="text-sm text-gray-500 font-semibold mt-1 flex flex-col hidden lg:block">STATUS</h2>
+      </div>
+       
+        <!-- Pedido 1 -->
+        <div class="whitespace-nowrap flex flex-col lg:flex-row justify-between items-start border-b-2 border-gray-200 py-4 gap-4  ">
+         <div class="flex items-start gap-4">
+    <!--<img src="assets/img-tenis.png" alt="Tênis" class="w-16 h-16 object-cover rounded bg-blue-100">-->
+    <div>
+      <p class="text-sm text-gray-500">Pedido nº 2234981932</p>
+      <p class="font-semibold text-gray-800">Tênis Nike Revolution 6 Next Nature Masculino</p>
+    </div>
+     </div>
+     <div class="flex gap-80 flex-row items-start lg:items-end text-left lg:text-right">
+    <span class="block lg:hidden text-xs text-gray-500 font-semibold">STATUS</span>
+    <p class="text-sm text-yellow-500 font-semibold flex flex-end">Produto em trânsito</p>
+      </div>
+    </div>
+
+
+        <!-- Pedido 2 -->
+        <div class="whitespace-nowrap flex flex-col lg:flex-row justify-between items-start border-b-2 border-gray-200 py-4 gap-4  ">
+         <div class="flex items-start gap-4">
+    <!--<img src="assets/img-tenis.png" alt="Tênis" class="w-16 h-16 object-cover rounded bg-blue-100">-->
+    <div>
+      <p class="text-sm text-gray-500">Pedido nº 2234981932</p>
+      <p class="font-semibold text-gray-800">Tênis Nike Revolution 6 Next Nature Masculino</p>
+    </div>
+     </div>
+     <div class="flex gap-90 flex-row items-start lg:items-end text-left lg:text-right">
+    <span class="block lg:hidden text-xs text-gray-500 font-semibold">STATUS</span>
+    <p class="text-sm text-gray-400 font-semibold flex flex-end">Finalizado</p>
+      </div>
+    </div>
+
+         <!-- Pedido 3 -->
+        <div class="whitespace-nowrap flex flex-col lg:flex-row justify-between items-start border-b-2 border-gray-200 py-4 gap-4  ">
+         <div class="flex items-start gap-4">
+    <!--<img src="assets/img-tenis.png" alt="Tênis" class="w-16 h-16 object-cover rounded bg-blue-100">-->
+    <div>
+      <p class="text-sm text-gray-500">Pedido nº 2234981932</p>
+      <p class="font-semibold text-gray-800">Tênis Nike Revolution 6 Next Nature Masculino</p>
+    </div>
+     </div>
+     <div class="flex gap-90 flex-row items-start lg:items-end text-left lg:text-right">
+    <span class="block lg:hidden text-xs text-gray-500 font-semibold">STATUS</span>
+    <p class="text-sm text-red-500 font-semibold flex flex-end">Cancelado</p>
+      </div>
+    </div>
+    
+        <!-- Pedido 4 -->
+        <div class="whitespace-nowrap flex flex-col lg:flex-row justify-between items-start border-b-2 border-gray-200 py-4 gap-4  ">
+         <div class="flex items-start gap-4">
+    <!--<img src="assets/img-tenis.png" alt="Tênis" class="w-16 h-16 object-cover rounded bg-blue-100">-->
+    <div>
+      <p class="text-sm text-gray-500">Pedido nº 2234981932</p>
+      <p class="font-semibold text-gray-800">Tênis Nike Revolution 6 Next Nature Masculino</p>
+    </div>
+     </div>
+     <div class="flex gap-90 flex-row items-start lg:items-end text-left lg:text-right">
+    <span class="block lg:hidden text-xs text-gray-500 font-semibold">STATUS</span>
+    <p class="text-sm text-gray-400 font-semibold mt-1 flex flex-end">Finalizado</p>
+      </div>
+    </div>
+    
+         <!-- Pedido 5 -->
+        <div class="whitespace-nowrap flex flex-col lg:flex-row justify-between items-start border-b-2 border-gray-200 py-4 gap-4  ">
+         <div class="flex items-start gap-4">
+    <!--<img src="assets/img-tenis.png" alt="Tênis" class="w-16 h-16 object-cover rounded bg-blue-100">-->
+    <div>
+      <p class="text-sm text-gray-500">Pedido nº 2234981932</p>
+      <p class="font-semibold text-gray-800">Tênis Nike Revolution 6 Next Nature Masculino</p>
+    </div>
+     </div>
+     <div class="flex gap-90 flex-row items-start lg:items-end text-left lg:text-right">
+    <span class="block lg:hidden text-xs text-gray-500 font-semibold">STATUS</span>
+    <p class="text-sm text-gray-400 font-semibold mt-1 flex flex-end">Finalizado</p>
+      </div>
+    </div>
+      </div>
+      </div>
+    </main>
+
+
+</body>
+
+</html>
