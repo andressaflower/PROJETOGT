@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+
+     <!-- Link Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <!-- Header - Cabeçalho -->
+    <header class="flex justify-center p-[1.25rem] bg-white">
+      <div
+        class="flex flex-row justify-between items-center gap-[1.25rem] w-[99%]"
+      >
+        <i class="fa-solid fa-bars text-[1.7rem]"></i>
+
+        <img
+          class="w-[9rem] ml-8"
+          src="assets/logo.png"
+          alt="logo-digital-store"
+        />
+
+        <div class="flex flex-row items-center gap-4">
+          <i
+            class="fa-solid fa-magnifying-glass text-[1.25rem] text-gray-400"
+          ></i>
+
+          <!-- Icone do carrinho de compra -->
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M7.42229 19.8203C7.84429 19.8203 8.18729 20.1633 8.18729 20.5853C8.18729 21.0073 7.84429 21.3493 7.42229 21.3493C7.00029 21.3493 6.65829 21.0073 6.65829 20.5853C6.65829 20.1633 7.00029 19.8203 7.42229 19.8203Z"
+              stroke="#C92071"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M18.6747 19.8203C19.0967 19.8203 19.4397 20.1633 19.4397 20.5853C19.4397 21.0073 19.0967 21.3493 18.6747 21.3493C18.2527 21.3493 17.9097 21.0073 17.9097 20.5853C17.9097 20.1633 18.2527 19.8203 18.6747 19.8203Z"
+              stroke="#C92071"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M2.74991 3.25L4.82991 3.61L5.79291 15.083C5.87091 16.018 6.65191 16.736 7.58991 16.736H18.5019C19.3979 16.736 20.1579 16.078 20.2869 15.19L21.2359 8.632C21.3529 7.823 20.7259 7.099 19.9089 7.099H5.16391"
+              stroke="#C92071"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M14.1254 10.795H16.8984"
+              stroke="#C92071"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
+    </header>
+
+    <main class="bg-[#F9F8FE] flex py-10 flex-col items-center gap-5 xl:flex-row xl:px-20 relative">
+        <form class="flex flex-col w-[88%] gap-5 xl:w-[60%]" method="POST">
+            <h2 class="text-3xl font-bold tracking-[0.75px]">Finalizar Compra</h2>
+
+  <!-- Informações Pessoais -->
+  <section class="bg-white flex flex-col gap-3 py-8 px-8">
+    <h2 class="text-[#474747] font-bold text-lg tracking-[0.75px]">Informações Pessoais</h2>
+    <hr class="bg-[#CCCCCC] h-[0.1rem] border-0">
+
+    <label for="nome" class="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg">Nome Completo * 
+      <input class="bg-zinc-100 h-12 placeholder-[#666666] p-3 outline-none font-normal" type="text" name="nome" id="nome" placeholder="Insira seu nome" required>
+    </label>
+    
+    <label for="cpf" class="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg">CPF * 
+      <input class="bg-zinc-100 h-12 placeholder-[#666666] p-3 outline-none font-normal" type="text" name="cpf" id="cpf" placeholder="Insira seu CPF" maxlength="14" required>
+    </label>
+
+    <label for="email" class="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg">E-mail * 
+      <input class="bg-zinc-100 h-12 placeholder-[#666666] p-3 outline-none font-normal" type="email" name="email" id="email" placeholder="Insira seu email" required>
+    </label>
+
+    <label for="celular" class="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg">Celular *
+      <input class="bg-zinc-100 h-12 placeholder-[#666666] p-3 outline-none font-normal" type="tel" name="celular" id="celular" placeholder="Insira seu celular" required>
+    </label>
+  </section>
+
+  <!-- Informações de Entrega -->
+  <section class="bg-white flex flex-col gap-3 py-8 px-8">
+    <h2 class="text-[#474747] font-bold text-lg tracking-[0.75px]">Informações de Entrega</h2>
+    <hr class="bg-[#CCCCCC] h-[0.1rem] border-0">
+
+    <label for="endereco" class="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg">Endereço * 
+      <input class="bg-zinc-100 h-12 placeholder-[#666666] p-3 outline-none font-normal" type="text" name="endereco" id="endereco" placeholder="Insira seu endereço" required>
+    </label>
+
+    <label for="bairro" class="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg">Bairro * 
+      <input class="bg-zinc-100 h-12 placeholder-[#666666] p-3 outline-none font-normal" type="text" name="bairro" id="bairro" placeholder="Insira seu bairro" required>
+    </label>
+
+    <label for="cidade" class="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg">Cidade * 
+      <input class="bg-zinc-100 h-12 placeholder-[#666666] p-3 outline-none font-normal" type="text" name="cidade" id="cidade" placeholder="Insira seu cidade" required>
+    </label>
+
+    <label for="cep" class="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg">CEP * 
+      <input class="bg-zinc-100 h-12 placeholder-[#666666] p-3 outline-none font-normal" type="text" name="cep" id="cep" placeholder="Insira seu cep" required>
+    </label>
+
+    <label for="complemento" class="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg">Complemento 
+      <input class="bg-zinc-100 h-12 placeholder-[#666666] p-3 outline-none font-normal" type="text" name="complemento" id="Complemento" placeholder="Insira seu complemento">
+    </label>
+  </section>
+
+  <!-- Informações de Pagamento -->
+  <section class="bg-white flex flex-col gap-3 py-8 px-8">
+    <h2 class="text-[#474747] font-bold text-lg tracking-[0.75px]">Informações de Pagamento</h2>
+    <hr class="bg-[#CCCCCC] h-[0.1rem] border-0">
+
+    <h4 class="text-[#474747] font-bold my-2">Forma de Pagamento</h4>
+    <label class="flex items-center flex-row gap-2">
+      <input class="accent-[#C92071] w-5 h-5" type="radio" name="pagamento" value="cartao">
+      Cartão de Crédito
+    </label>
+
+    <label class="flex items-center flex-row gap-2 mb-3">
+      <input class="accent-[#C92071] w-5 h-5" type="radio" name="pagamento" value="boleto">
+      Boleto Bancário
+    </label>
+
+    <div id="pagamento-cartao" class="flex flex-col gap-4">
+      <label class="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg">Nome do Cartão * 
+        <input class="bg-zinc-100 h-12 placeholder-[#666666] p-3 outline-none font-normal" type="text" name="nome_cartao" placeholder="Insira o nome do Cartão" required>
+      </label>
+
+      <label class="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg">Número do Cartão *
+        <input class="bg-zinc-100 h-12 placeholder-[#666666] p-3 outline-none font-normal" type="text" name="numero_cartao" placeholder="Insira o número do Cartão" required>
+      </label>
+
+      <label class="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg">Data de Validade do Cartão *
+        <input class="bg-zinc-100 h-12 placeholder-[#666666] p-3 outline-none font-normal" type="text" name="validade_cartao" placeholder="Insira a validade do Cartão" required>
+      </label>
+
+      <label class="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg">CVV *
+        <input class="bg-zinc-100 h-12 placeholder-[#666666] p-3 outline-none text-[#474747] font-normal" type="text" name="cvv" placeholder="CVV" required>
+      </label>
+    </div>
+  </section>
+
+  <!-- Total a Pagar -->
+     <section class="bg-white justify-center py-5 hidden xl:block ">
+      <div class="flex flex-col py-5 px-8">
+        <h4 class="text-[#474747] font-bold tracking-[0.75px] text-lg mb-5">Finalizar Compra</h4>
+        <hr class="bg-[#CCCCCC] h-[0.1rem] border-0 mb-5">
+
+        <div class="h-25 flex flex-col gap-2">
+      <div class="text-2xl font-bold flex flex-row justify-between">
+        <h4>Total</h4>
+        <p class="text-red-500">R$ 219,00</p>
+      </div>
+
+      <p class="text-end font-medium text-zinc-400 text-lg">ou 10x de R$ 21,00 sem juros</p>
+    </div>
+
+       <button class="bg-amber-400 py-4 text-lg text-white font-bold tracking-[0.90px] rounded-xl hover:bg-amber-500 hover:cursor-pointer" type="submit">Realizar Pagamento</button>
+      </div>
+     </section>
+</form>
+
+    <!-- Resumo do Pedido -->
+  <section class="bg-white flex flex-col gap-3 py-8 px-8 w-[88%] xl:absolute xl:top-24 xl:right-20 xl:w-130 ">
+    <h2 class="text-[#474747] font-bold text-xl tracking-[0.75px] uppercase">Resumo</h2>
+
+    <hr class="bg-[#CCCCCC] h-[0.1rem] border-0">
+    <div class="flex flex-row items-center h-[5.7rem] gap-4 md:h-[8rem] md:my-3 md:justify-center xl:my-1">
+      <div class="bg-[#E2E3FF] p-3 h-[5rem] flex items-center justify-center w-50 rounded-md md:h-[8rem] xl:h-[4.7rem] xl:w-40">
+        <img class="rotate-15 w-20 md:w-30 xl:w-20" src="assets/finalizar-compra/tenis-banner.png" alt="tenis-img">
+      </div>
+      <p class="text-base font-bold text-left md:text-2xl xl:text-base">Tênis Nike Revolution 6 Next Nature Masculino</p>
+    </div>
+    <hr class="bg-[#CCCCCC] h-[0.1rem] border-0">
+
+    <div class="flex flex-col gap-4 py-4">
+     <div class="flex flex-row justify-between">
+      <h4 class="text-[#8F8F8F] text-lg font-medium md:text-2xl xl:text-xl">Subtotal:</h4>
+      <p class="text-lg font-medium md:text-2xl xl:text-xl">R$ 219,00</p>
+     </div>
+
+     <div class="flex flex-row justify-between">
+      <h4 class="text-[#8F8F8F] text-lg font-medium md:text-2xl xl:text-xl">Frete:</h4>
+      <p class="text-lg font-medium md:text-2xl xl:text-xl">R$ 0,00</p>
+     </div>
+
+     <div class="flex flex-row justify-between">
+      <h4 class="text-[#8F8F8F] text-lg font-medium md:text-2xl xl:text-xl">Desconto:</h4>
+      <p class="text-lg font-medium md:text-2xl xl:text-xl">R$ 30,00</p>
+     </div>
+    </div>
+
+    <div class="bg-amber-300/10 border-2 rounded-sm border-amber-200/50 h-30 px-9 py-7 flex flex-col gap-2 md:h-40 md:py-9 xl:h-35">
+      <div class="text-xl font-bold flex flex-row justify-between md:text-3xl xl:text-2xl">
+        <h4>Total</h4>
+        <p>R$ 219,00</p>
+      </div>
+
+      <p class="text-end font-medium text-zinc-400 text-sm md:text-xl xl:text-lg">ou 10x de R$ 21,00 sem juros</p>
+    </div>
+
+    <button class="bg-amber-400 py-6 text-lg mt-5 text-white font-bold tracking-[0.90px] rounded-xl hover:bg-amber-500 hover:cursor-pointer md:text-2xl xl:text-xl" type="submit">Realizar Pagamento</button>
+  </section>
+    </main>
+
+    <!-- Total a Pagar -->
+     <section class="bg-white flex justify-center py-5 xl:hidden">
+      <div class="flex flex-col w-[85%] py-5">
+        <div class="h-25 flex flex-col gap-2">
+      <div class="text-2xl font-bold flex flex-row justify-between md:text-3xl">
+        <h4>Total</h4>
+        <p class="text-red-500">R$ 219,00</p>
+      </div>
+
+      <p class="text-end font-medium text-zinc-400 text-lg md:text-2xl">ou 10x de R$ 21,00 sem juros</p>
+    </div>
+
+       <button class="bg-amber-400 py-4 text-lg text-white font-bold tracking-[0.90px] rounded-xl hover:bg-amber-500 hover:cursor-pointer md:text-2xl" type="submit">Realizar Pagamento</button>
+      </div>
+     </section>
+
+    <!-- footer -->
+    <footer class="bg-[#1F1F1F] text-white flex justify-center py-12">
+      <div class="w-[92%] flex flex-col items-center">
+        <div class="flex flex-col gap-6">
+          <div class="flex flex-col gap-4">
+            <img class="w-[13rem]" src="assets/logo-branca.png" alt="" />
+            <p class="text-[1.1rem] w-[90%]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore.
+            </p>
+          </div>
+
+          <!-- Rede Sociais -->
+          <div class="flex flex-row gap-10 py-3">
+            <i class="fa-brands fa-facebook-f text-2xl"></i>
+            <i class="fa-brands fa-instagram text-2xl"></i>
+            <i class="fa-brands fa-twitter text-2xl"></i>
+          </div>
+
+          <!-- Colunas de Informações -->
+          <div class="flex flex-wrap gap-10">
+            <div class="flex flex-col gap-2">
+              <h3 class="text-2xl font-semibold">Informação</h3>
+              <div class="flex flex-col gap-2">
+                <a class="text-xl" href="#">Sobre Drip Store</a>
+                <a class="text-xl" href="#">Segurança</a>
+                <a class="text-xl" href="#">Wishlist</a>
+                <a class="text-xl" href="#">Blog</a>
+                <a class="text-xl" href="#">Trabalhe conosco</a>
+                <a class="text-xl" href="#">Meus Pedidos</a>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-2">
+              <h3 class="text-2xl font-semibold">Informação</h3>
+              <div class="flex flex-col gap-2">
+                <a class="text-xl" href="#">Camisetas</a>
+                <a class="text-xl" href="#">Calças</a>
+                <a class="text-xl" href="#">Bonés</a>
+                <a class="text-xl" href="#">Headphones</a>
+                <a class="text-xl" href="#">Tênis</a>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-2 mb-10">
+              <h3 class="text-2xl font-semibold">Contato</h3>
+              <div class="flex flex-col gap-5">
+                <a class="text-xl w-[90%]" href="#"
+                  >Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE,
+                  60150-161</a
+                >
+                <p class="text-xl">(85) 3051-3411</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="w-[95%] opacity-50" />
+
+        <p class="text-center mt-5">@ 2022 Digital College</p>
+      </div>
+    </footer>
+
+    <script src="finalizar-compra.js"></script>
+</body>
+</html>
